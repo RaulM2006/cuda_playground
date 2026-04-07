@@ -1,0 +1,29 @@
+# Prerequisites: CMake and Build artifacts
+build/
+bin/
+obj/
+out/
+
+# Visual Studio / MSVC specific
+.vs/
+*.sln
+*.vcxproj
+*.filters
+*.user
+x64/
+Debug/
+Release/
+
+# VS Code specific (Personal settings)
+.vscode/
+
+# Compiled Executables
+*.exe
+*.pdb
+
+# CUDA specific temporary files
+*.i
+*.ii
+*.gpu
+*.ptx
+*.fatbin
