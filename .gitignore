@@ -1,29 +1,30 @@
-# Prerequisites: CMake and Build artifacts
+# --- Build Artifacts ---
 build/
 bin/
 obj/
 out/
+*.exe
+*.dll
+*.so
+*.dylib
+*.lib
+*.obj
+*.pdb
+*.exp
 
-# Visual Studio / MSVC specific
+# --- IDE Specifics ---
+.vscode/
 .vs/
+*.user
+*.suo
 *.sln
 *.vcxproj
 *.filters
-*.user
-x64/
-Debug/
-Release/
 
-# VS Code specific (Personal settings)
-.vscode/
+# --- Data & Assets ---
+data/output/*
+!data/output/.gitkeep
 
-# Compiled Executables
-*.exe
-*.pdb
-
-# CUDA specific temporary files
-*.i
-*.ii
-*.gpu
-*.ptx
-*.fatbin
+# --- OS Specifics ---
+Thumbs.db
+.DS_Store

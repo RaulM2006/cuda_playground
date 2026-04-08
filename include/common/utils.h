@@ -10,3 +10,7 @@
         exit(1); \
     } \
 }
+
+unsigned char* load_image(const char* filename, int& width, int& height);
+void write_image(const char* filename, int width, int height, int channels, unsigned char* data);
+void free_image(unsigned char* data);

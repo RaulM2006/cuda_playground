@@ -11,13 +11,15 @@ add_executable(main
     src/main.cpp
     src/cpu/operations.cpp
     src/gpu/kernels.cu
+    src/common/utils.cpp
 )
 
 # Use target_include_directories instead of include_directories
 # This makes the project more modular
 target_include_directories(main PRIVATE 
     include 
-    src/common
+    include/common
+    external
     ${CUDAToolkit_INCLUDE_DIRS}
 )
 
