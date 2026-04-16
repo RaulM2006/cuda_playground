@@ -1,4 +1,7 @@
 cmake_minimum_required(VERSION 3.18)
+
+set(CMAKE_CUDA_FLAGS "-allow-unsupported-compiler")
+
 project(cuda_playground LANGUAGES CXX CUDA)
 
 set(CMAKE_CXX_STANDARD 17)
